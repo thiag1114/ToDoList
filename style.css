@@ -24,7 +24,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    background: center/cover url(assets/wallpaper-todo.jpg) no-repeat;
+    background: center/cover url(assets/wallpaper-todo.jpg) no-repeat #1a1a1a;
     width: 100%;
     min-height: 100vh;
     padding: 5rem 0;
@@ -272,11 +272,25 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
+    .boxContainers {
+        gap: 5px;
+    }
+    .btnAdd {
+        border-radius: 0 8px 8px 0;
+        padding: 0 .5rem;
+    }
+    
+    .btnAdd:hover {
+        background-color: var(--purple);
+    }
     .box-input-task {
         width: 500px;
     }
     .input-task, .task, .containerQuestion {
         background-color: rgba(0, 0, 0, .7);
+    }
+    .task {
+        color: white;
     }
     .inputBox {
         margin: 1rem 0;

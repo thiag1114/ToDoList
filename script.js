@@ -107,19 +107,19 @@ document.addEventListener('click', (e) => {
     let parentElement = elementClick.closest('li');
 
     if (elementClick.classList.contains('todo')) { 
-        let textEl = parentElement.children[0].value;
+        let textEl = parentElement.children[0].innerText;
         parentElement.remove();
         createTask(textEl, 1);
     }
     
     if (elementClick.classList.contains('doing')) {
-        let textEl = parentElement.children[0].value;
+        let textEl = parentElement.children[0].innerText;
         parentElement.remove();
         createTask(textEl, 2);
     }
 
     if (elementClick.classList.contains('done')) {
-        let textEl = parentElement.children[0].value;
+        let textEl = parentElement.children[0].innerText;
         questionMove.style.display = 'flex';
         setTimeout(() => {
             questionMove.style.transform = 'scale(1)';

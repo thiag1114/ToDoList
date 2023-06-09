@@ -19,16 +19,27 @@
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background: center/cover url(assets/wallpaper-todo.jpg) no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    padding: 5rem 0;
+    font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
+}
+
+.boxContainers {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    background: center/cover url(assets/wallpaper-todo.jpg) no-repeat;
     width: 100%;
-    height: 100vh;
-    font-family: 'Orbitron', sans-serif;
 }
 
 .containerQuestion {
@@ -123,7 +134,6 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: -18rem;
 }
 
 .box-input-task {
@@ -137,7 +147,7 @@ main {
     border: 1px solid var(--pink);
     border-right: 0;
     border-radius: 8px 0 0 8px;
-    background-color: #1a1a1ad6;
+    background-color: rgba(0, 0, 0, .6);
     color: var(--text);
     outline: none;
     padding-left: .8rem;
@@ -259,4 +269,58 @@ main {
 
 .icon-btn-task {
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .box-input-task {
+        width: 500px;
+    }
+    .input-task, .task, .containerQuestion {
+        background-color: rgba(0, 0, 0, .7);
+    }
+    .inputBox {
+        margin: 1rem 0;
+    }
+    .container {
+        padding: 2rem 1rem;
+        width: 30%;
+        min-height: 350px;
+    }
+    .box {
+        border-radius: 15px;
+        padding: 0;
+        min-height: 370px;
+    }
+    .question {
+        background-color: rgba(0, 0, 0, .8);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        width: 45%;
+        min-height: 370px;
+    }
+    .containerQuestion {
+        height: 1312px;
+    }
+    .question {
+        top: 65%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .box-input-task {
+        width: 365px;
+    }
+    .container {
+        width: 80%;
+        min-height: 350px;
+    }
+    .containerQuestion {
+        height: 1832px;
+    }
+    .question {
+        top: 75%;
+    }
 }

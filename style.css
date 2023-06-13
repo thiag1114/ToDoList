@@ -24,7 +24,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 50px;
-    background: center/cover url(assets/wallpaper-todo.jpg) no-repeat #1a1a1a;
+    background: center / cover no-repeat url(assets/wallpaper-todo.jpg) #1a1a1a;
     width: 100%;
     min-height: 100vh;
     padding: 5rem 0;

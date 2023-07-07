@@ -19,7 +19,6 @@ function inList(text) {
         return false;
     }
 }
-
 function createTask(text, box) {
     let task = document.createElement('li');
     task.classList.add('task');

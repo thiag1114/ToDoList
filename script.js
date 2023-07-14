@@ -10,6 +10,7 @@ let boxTasks = document.querySelectorAll('.box');
 let alertAdd = document.querySelector('.alert-add');
 let listTasks = [];
 let interval;
+
 // Functions
 function inList(text) {
     if (listTasks.includes(text)) {
